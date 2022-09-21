@@ -1,23 +1,23 @@
 public class Prog166f {
     public static void main(String[] args) {
 
-        int lcv = 1;
-        int upperbound = 100;
-        int bigsum = 0;
+        int LCV = 1;
+        int upperBound = 100;
+        int bigSum = 0;
 
-        while (upperbound <= 110) {
+        while (upperBound <= 110) {
 
-            bigsum += lcv;
+            bigSum += LCV;
 
-            if (lcv == upperbound) {
+            if (LCV == upperBound) {
 
-                System.out.println("The sum of the numbers from 1 to " + upperbound + " is " + bigsum);
-                bigsum = 0;
-                lcv = 1;
-                upperbound += 1;
+                System.out.println("The sum of the numbers from 1 to " + upperBound + " is " + bigSum);
+                bigSum = 0;
+                LCV = 1;
+                upperBound += 1;
             }
 
-            lcv += 1;
+            LCV += 1;
         }
     }
 }
