@@ -1,5 +1,5 @@
 import java.util.*;
-class Main {
+class LP517 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("What would you like your password to be?");
