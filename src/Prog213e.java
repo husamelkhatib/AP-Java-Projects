@@ -36,10 +36,10 @@ public class Prog213e {
 
             System.out.println("Age Group\tDistribution\tPercentage");
             System.out.printf("<20\t%d\t%.2f\n", (int) young, percentYoung);
-            System.out.printf("20-39\t%d\t%.2f\n", (int) percentMiddleAged);
-            System.out.printf("40-59\t%d", gettingOld, "\t%.2f\n", percentGettingOld);
-            System.out.printf("60-79\t%d", old, "\t%.2f\n", percentOld);
-            System.out.printf(">79\t%d", gonnaDieSoon, "\t%.2f\n", percentGonnaDieSoon);
+            System.out.printf("20-39\t%d\t%.2f\n", (int) middleAged, percentMiddleAged);
+            System.out.printf("40-59\t%d\t%.2f\n", (int) gettingOld, percentGettingOld);
+            System.out.printf("60-79\t%d\t%.2f\n", (int) old, percentOld);
+            System.out.printf(">79\t%d\t%.2f\n", (int) gonnaDieSoon, percentGonnaDieSoon);
         } catch (IOException e) {
             System.out.println("Can't find data file!");
         }
