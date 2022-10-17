@@ -28,7 +28,7 @@ public class Cl52a {
 
     /**
      * Returns the area (length * width)
-     * @return the calculated area after calling setstuff()
+     * @return the calculated area after calling setStuff()
      */
     public int getArea() { return myArea; }
     public int getPerim() { return myPerim; }

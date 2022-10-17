@@ -1,13 +1,14 @@
 import java.util.Scanner;
+import static  java.lang.System.out;
 public class Prog52aClass {
     // Driver program
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Please enter length: ");
+        out.println("Please enter length: ");
                 int len = keyboard.nextInt();
-        System.out.println("Please enter width: ");
+        out.println("Please enter width: ");
         int wid = keyboard.nextInt();
-        System.out.println();
+        out.println();
 
         // Make a new object (instance) of Cl52a (instantiate the class)
         Cl52a wow = new Cl52a(len, wid);
@@ -16,7 +17,7 @@ public class Prog52aClass {
 
         int area = wow.getArea();
         int perim = wow.getPerim();
-        System.out.println("Area: " + area);
-        System.out.println("Perimeter: " + perim);
+       out.println("Area: " + area);
+       out.println("Perimeter: " + perim);
     }
 }
