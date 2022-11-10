@@ -13,6 +13,15 @@ public class Prog435g {
                     count++;
                 }
 // Sort the Scores
+            for (int lcv = 0; lcv < count; lcv ++) {
+                for (int lcv2 = 0; lcv2 < count - 1; lcv2++) {
+                    if (scores[lcv2] > scores[lcv2 + 1]) {
+                        int temp = scores[lcv2];
+                        scores[lcv2] = scores[lcv2 + 1];
+                        scores[lcv2 + 1] = temp;
+                    }
+                }
+            }
             Cl435g[] golfers = new Cl435g[count];
                 for (int lcv = 0; lcv < count; lcv++) {
                     Cl435g myguy = new Cl435g(scores[lcv]);
