@@ -12,7 +12,23 @@ public class Prog435g {
                     scores[count] = score;
                     count++;
                 }
+// Sort the Scores
+            Cl435g[] golfers = new Cl435g[count];
+                for (int lcv = 0; lcv < count; lcv++) {
+                    Cl435g myguy = new Cl435g(scores[lcv]);
+                    golfers[lcv] = myguy;
 
+                }
+                int rank = 1;
+                for (int lcv = 0; lcv < count; lcv++) {
+                    golfers[lcv].setRank(rank);
+                    if (lcv < count && scores[lcv] != scores[lcv + 1])
+                        rank ++;
+                }
+                System.out.println("Scores\t\tRank");
+                for (int lcv = 0; lcv < count; lcv++) {
+                    System.out.println(golfers[lcv].toString());
+                }
         } catch (IOException e){
             System.out.println("Cant find data file!");
         }
