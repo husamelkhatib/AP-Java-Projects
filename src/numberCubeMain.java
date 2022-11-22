@@ -1,7 +1,8 @@
-public class NumberCubeMain {
+public class numberCubeMain {
     private int notReady;
     private static int isReady = 18;
-    public static int[] getCubeTosses(NumberCube cube, int numTosses) {
+
+    public static int[] getCubeTosses(numberCube cube, int numTosses) {
         // Static means ready at compile-time
         // i.e., we don't have to make an object to use the method/variable
         // Much like all of our math functions
@@ -34,8 +35,10 @@ public class NumberCubeMain {
     }
 
     public static void main(String[] args) {
-        NumberCube x = new NumberCube();
+        numberCube x = new numberCube();
         int[] y = getCubeTosses(x, isReady);
         for (int temp : y)
             System.out.print(temp + " ");
         System.out.println("\nLongest run: " + getLongestRun(y));
+    }
+}
