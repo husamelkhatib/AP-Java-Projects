@@ -1,9 +1,9 @@
-import java.util.*;
+/*import java.util.*;
 import java.io.*;
 
 
 public class BigArrayListCat {
-    /*
+
     1. Print out all the cats (there is no toString() available)
     2. Print the name of the 3rd cat.
     3. The last cat has gained 10 pounds. Update the weight on the object. Print the new weight.
@@ -17,7 +17,7 @@ public class BigArrayListCat {
     11. Remove all cats under $26. Print the costs of each cat remaining on the list.
     12. All cats heavier than 15 pounds need to go on a diet <--  no for-each this time.
     13. Print the names of the cats being put on a diet.
-    */
+
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/bigarraylist.dat"));
@@ -113,3 +113,4 @@ public class BigArrayListCat {
         }
     }
 }
+*/
