@@ -60,6 +60,40 @@ public class Prog702p {
             System.out.println("Average size of the beepers words " + String.format("%.2f", (totSize/cnt3)));
 
 
+// Create a map to store the frequency of each letter
+            Map<Character, Integer> letterFrequency = new HashMap<>();
+
+// Iterate through all the beepers and their words
+            for (Animal a : animals) {
+                if (a instanceof Beeper) {
+                    String word = ((Beeper) a).getWord().toLowerCase();
+                    for (int i = 0; i < word.length(); i++) {
+                        char c = word.charAt(i);
+                        if (Character.isLetter(c)) {
+                            letterFrequency.put(c, letterFrequency.getOrDefault(c, 0) + 1);
+                        }
+                    }
+                }
+            }
+
+// Find the letter(s) with the highest frequency
+            int maxFrequency = 0;
+            for (int frequency : letterFrequency.values()) {
+                if (frequency > maxFrequency) {
+                    maxFrequency = frequency;
+                }
+            }
+
+            StringBuilder mostCommonLetters = new StringBuilder();
+            for (char c : letterFrequency.keySet()) {
+                if (letterFrequency.get(c) == maxFrequency) {
+                    mostCommonLetters.append(c).append(" ");
+                }
+            }
+
+            System.out.println("The most common letter(s) in all the Beepers' words is: " + mostCommonLetters);
+
+
 
 
         } catch (IOException e) {
